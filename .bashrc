@@ -119,10 +119,10 @@ fi
 # for powerline-shell
 export PATH=$PATH:~/.local/bin
 function _update_ps1() {
-	PS1="$(~/.local/bin/powerline-shell $?)"
+  PS1="$(~/.local/bin/powerline-shell $?)"
 }
 
 if [ "$TERM" != "linux" ]; then
-	PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+  PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
