@@ -116,10 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export PATH=$PATH:~/.local/bin:~/bin
+
 # for powerline-shell
-export PATH=$PATH:~/.local/bin
 function _update_ps1() {
-  PS1="$(~/.local/bin/powerline-shell $?)"
+  PS1="$(powerline-shell $?)"
 }
 
 if [ "$TERM" != "linux" ]; then
