@@ -10,6 +10,7 @@ syntax on
 
 set cmdheight=2
 set laststatus=2 "always show status line
+set scrolloff=5 "show 5 lines above when pressing z + Enter
 
 set list
 set listchars=tab:^\ ,trail:-
@@ -22,6 +23,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+set autoindent
 set smartindent
 
 set clipboard+=unnamed
