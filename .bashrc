@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$PATH:~/.local/bin:~/bin
+export PATH=$PATH:~/bin
 
 # for powerline-shell
 function _update_ps1() {
@@ -126,4 +126,7 @@ function _update_ps1() {
 if [ "$TERM" != "linux" ]; then
   PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
+
+# Disable screen lock and enable use in history search.
+stty stop undef
 
